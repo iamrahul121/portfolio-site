@@ -1,0 +1,210 @@
+@import "./components/common.scss";
+
+@media only screen and (max-width: 900px) {
+  // ------------------ NavBar --------------------
+
+  .navbar-section {
+    .list {
+      .li-items {
+        @include fonts(15px, 500, 1);
+      }
+    }
+  }
+  // --------------- Btn -----------------
+  .btn {
+    width: 120px;
+    .btn-content {
+      @include fonts(15px, 500, 1);
+    }
+  }
+
+  .content-section {
+    padding: 30px 10px;
+    .left-col {
+      width: 50%;
+      h3 {
+        .brand-name {
+          @include fonts(42px, 700, 55px);
+        }
+      }
+      p {
+        @include fonts(14px, 400, 23px);
+        letter-spacing: 0.5px;
+        width: 90%;
+      }
+      .btn {
+        width: 130px;
+        .btn-content {
+          @include fonts(15px, 500, 24px);
+        }
+      }
+    }
+    .right-col {
+      img {
+        width: 320px;
+      }
+    }
+  }
+
+  // ------------------ Skill Section ---------------
+  .skills-section {
+    gap: 20px;
+    padding: 50px 10px;
+    .left-skills {
+      width: 50%;
+      img {
+        width: 80%;
+      }
+    }
+    .right-skills {
+      width: 50%;
+      h2 {
+        @include fonts(38px, 600, 48px);
+      }
+      p {
+        padding: 20px 0px;
+        @include fonts(14px, 400, 22px);
+        letter-spacing: 0.5px;
+      }
+      .btn {
+        width: 140px;
+        .btn-content {
+          @include fonts(15px, 500, 22px);
+        }
+      }
+    }
+  }
+
+  // ----------------- Portfolio -------------------
+  h2 {
+    font-size: 33px;
+  }
+  .portfolio-section {
+    padding: 30px 0px;
+    .portfolio-list {
+      .portfolio-items {
+        @include fonts(16px, 400, 25px);
+      }
+    }
+    .all-projects {
+      padding: 40px 0px;
+      height: auto;
+    }
+  }
+
+  // ----------------------- Blog ------------
+
+  .blog-section {
+    padding-top: 30px;
+    flex-direction: column;
+    .blogs {
+      padding: 10px 0px;
+      .blog-col {
+        width: 350px;
+      }
+    }
+  }
+
+  // --------------- Contact -------------
+  .contact-section {
+    margin-top: 0px;
+    .contact-left {
+      width: 80%;
+      margin: 10px auto;
+    }
+    .contact-right {
+      width: 80%;
+      margin: 10px auto;
+      .inp {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar-section {
+    justify-content: center;
+    .app-logo{
+      width:220px;
+      margin-top: 5px;
+    }
+    .list {
+      display: none;
+    }
+  }
+  .content-section {
+    flex-direction: column;
+    justify-content: space-between;
+    // margin-top: 20px;
+    .left-col {
+      width: 100%;
+      text-align: center;
+      margin-top: 60px;
+      justify-content: center;
+      p {
+        width: 95%;
+      }
+      .header-btn {
+        width: 100%;
+        .btn {
+          margin: 10px auto;
+        }
+      }
+    }
+    .right-col {
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+
+  .skills-section {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    .left-skills {
+      width: 100%;
+    }
+    .right-skills {
+      width: 100%;
+      h2 {
+        text-align: center;
+      }
+      .btn {
+        margin: 10px auto;
+      }
+    }
+  }
+  .portfolio-section {
+    .portfolio-list {
+      .portfolio-items {
+        display: none;
+      }
+    }
+  }
+  // -----------------------
+  .contact-section {
+    margin-top: 0px;
+    .contact-left {
+      width: 100%;
+    }
+    .contact-right {
+      width: 100%;
+      .inp {
+        width: 100%;
+      }
+    }
+  }
+
+  // ---------------------------
+
+  .footer-section {
+    .links {
+      gap: 20px;
+    }
+    .copyrights {
+      @include fonts(14px, 400, 25px);
+      text-align: center;
+    }
+  }
+}
